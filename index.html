@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover beautiful destinations and plan your next adventure with Wanderly." />
+  <title>Wanderly | Explore the World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo"><span>✦</span> wanderly</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#packages">Packages</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Plan a Trip ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow"><span class="live-dot"></span> YOUR NEXT ADVENTURE STARTS HERE</span>
+        <h1>The world is wide.<br />Go <span>explore it.</span></h1>
+        <p>Discover extraordinary places, create unforgettable memories, and make every journey count.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#destinations">Explore destinations <span>↗</span></a>
+          <a class="btn btn-glass" href="#about">Discover Wanderly</a>
+        </div>
+
+        <form class="search-panel" id="searchForm">
+          <label>
+            <span class="field-icon">⌖</span>
+            <span class="field-content">
+              <span class="field-label">Destination</span>
+              <input id="destinationInput" type="text" placeholder="Where do you want to go?" />
+            </span>
+          </label>
+          <label>
+            <span class="field-icon">▦</span>
+            <span class="field-content">
+              <span class="field-label">Travel date</span>
+              <input id="travelDate" type="date" />
+            </span>
+          </label>
+          <label>
+            <span class="field-icon">♙</span>
+            <span class="field-content">
+              <span class="field-label">Travelers</span>
+              <select id="travelers">
+                <option value="1">1 traveler</option>
+                <option value="2" selected>2 travelers</option>
+                <option value="3">3 travelers</option>
+                <option value="4">4 travelers</option>
+                <option value="5+">5+ travelers</option>
+              </select>
+            </span>
+          </label>
+          <button class="btn btn-primary search-btn" type="submit">Search trips ↗</button>
+        </form>
+        <p class="search-feedback" id="searchFeedback" aria-live="polite"></p>
+      </div>
+      <div class="hero-bottom container">
+        <span>✳ MADE FOR THE CURIOUS</span>
+        <span>SCROLL TO EXPLORE ↓</span>
+      </div>
+    </section>
+
+    <section class="stats container" aria-label="Wanderly highlights">
+      <div><strong>120+</strong><span>Destinations</span></div>
+      <div><strong>15k+</strong><span>Happy travelers</span></div>
+      <div><strong>4.9/5</strong><span>Traveler rating</span></div>
+      <div><strong>24/7</strong><span>Travel support</span></div>
+    </section>
+
+    <section class="section container" id="destinations">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow dark-eyebrow">FIND YOUR HAPPY PLACE</span>
+          <h2>Popular <span>destinations.</span></h2>
+          <p>From peaceful escapes to unforgettable city adventures.</p>
+        </div>
+        <a href="#packages" class="text-link">View all trips ↗</a>
+      </div>
+
+      <div class="destination-grid">
+        <article class="destination-card featured">
+          <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1000&q=85" alt="Santorini white buildings overlooking the blue sea" />
+          <span class="destination-tag">MOST LOVED</span>
+          <div class="destination-info">
+            <div><h3>Santorini, Greece</h3><p>☼ Island escape · 5 days</p></div>
+            <strong>From $899</strong>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=85" alt="Colorful coastal Italian village" loading="lazy" />
+          <div class="destination-info">
+            <div><h3>Amalfi Coast, Italy</h3><p>⌖ Coastal getaway</p></div>
+            <strong>From $749</strong>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=85" alt="New York City skyline at night" loading="lazy" />
+          <div class="destination-info">
+            <div><h3>New York, USA</h3><p>⌖ City adventure</p></div>
+            <strong>From $699</strong>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=85" alt="Dubai skyline with modern skyscrapers" loading="lazy" />
+          <div class="destination-info">
+            <div><h3>Dubai, UAE</h3><p>⌖ Luxury escape</p></div>
+            <strong>From $599</strong>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=85" alt="Mountain landscape in warm sunset light" loading="lazy" />
+          <div class="destination-info">
+            <div><h3>Mountain Retreat</h3><p>⌖ Nature & adventure</p></div>
+            <strong>From $399</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience" id="about">
+      <div class="container experience-grid">
+        <div class="experience-image">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1000&q=85" alt="Traveler enjoying a beautiful lake surrounded by mountains" loading="lazy" />
+          <div class="floating-note"><span>✦</span><div><strong>Travel differently</strong><p>Memories over miles.</p></div></div>
+        </div>
+        <div class="experience-content">
+          <span class="eyebrow dark-eyebrow">MORE THAN JUST A TRIP</span>
+          <h2>Collect moments.<br />Not <span>things.</span></h2>
+          <p class="experience-description">We believe the best journeys take you beyond the ordinary. Find places that inspire you, experiences that move you, and adventures worth remembering.</p>
+          <div class="benefit"><span>✓</span><div><strong>Handpicked experiences</strong><p>Discover destinations chosen for unforgettable memories.</p></div></div>
+          <div class="benefit"><span>✓</span><div><strong>Trips made for you</strong><p>Explore options that suit your style and travel goals.</p></div></div>
+          <div class="benefit"><span>✓</span><div><strong>Support along the way</strong><p>Travel with more confidence and less stress.</p></div></div>
+          <a class="btn btn-dark" href="#packages">Find your adventure ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="packages">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow dark-eyebrow">YOUR NEXT CHAPTER</span>
+          <h2>Trips worth <span>taking.</span></h2>
+          <p>Pick a vibe. We’ll help you start planning.</p>
+        </div>
+      </div>
+      <div class="package-grid">
+        <article class="package-card">
+          <div class="package-icon">⌁</div><span class="package-duration">3–5 DAYS</span>
+          <h3>Weekend Getaway</h3><p>A refreshing break from routine, with new places and new perspectives.</p>
+          <div class="package-bottom"><strong>From $299</strong><a href="#contact" class="text-link">Explore ↗</a></div>
+        </article>
+        <article class="package-card package-highlight">
+          <div class="package-icon">✧</div><span class="package-duration">5–8 DAYS</span>
+          <h3>Adventure Seeker</h3><p>Epic landscapes, outdoor discoveries, and stories you'll tell for years.</p>
+          <div class="package-bottom"><strong>From $599</strong><a href="#contact" class="text-link">Explore ↗</a></div>
+        </article>
+        <article class="package-card">
+          <div class="package-icon">☼</div><span class="package-duration">7–10 DAYS</span>
+          <h3>Luxury Escape</h3><p>Slow down, recharge, and enjoy a thoughtfully planned getaway.</p>
+          <div class="package-bottom"><strong>From $999</strong><a href="#contact" class="text-link">Explore ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="container quote-inner">
+        <span class="eyebrow">TRAVELER STORIES</span>
+        <div class="stars">★★★★★</div>
+        <blockquote>“The best part of traveling is finding a little piece of yourself in places you’ve never been.”</blockquote>
+        <p>— A reminder to keep exploring</p>
+      </div>
+    </section>
+
+    <section class="contact-section container" id="contact">
+      <div>
+        <span class="eyebrow dark-eyebrow">LET'S MAKE IT HAPPEN</span>
+        <h2>Your next adventure<br />is <span>calling.</span></h2>
+        <p>Tell us where you dream of going. Your next story starts with one small step.</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required />
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        <label for="message">Where would you like to go?</label>
+        <textarea id="message" name="message" rows="3" placeholder="Tell us about your dream trip..." required></textarea>
+        <button class="btn btn-primary" type="submit">Send your inquiry ↗</button>
+        <p id="contactFeedback" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div><a href="#home" class="logo footer-logo"><span>✦</span> wanderly</a><p>See more. Feel more. Live more.</p></div>
+      <div class="footer-links"><a href="#destinations">Destinations</a><a href="#packages">Packages</a><a href="#about">About us</a><a href="#contact">Contact</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Wanderly. Made for explorers.</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
